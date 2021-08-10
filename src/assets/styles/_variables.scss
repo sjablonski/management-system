@@ -1,0 +1,26 @@
+@import 'functions';
+
+:root {
+  --bg-color: #f7f7f7;
+  --bg-paper-color: #fff;
+  --shadow-color: rgba(0, 0, 0, 0.15);
+  --border-radius: 2px;
+  --primary-color-h: 6;
+  --primary-color-s: 63%;
+  --primary-color-l: 50%;
+  --primary-color: hsl(var(--primary-color-h), var(--primary-color-s), var(--primary-color-l));
+  --primary-text-color: #fff;
+}
+
+body.dark {
+  --bg-color: #303030;
+  --bg-paper-color: #424242;
+}
+
+$bg-color: var(--bg-color);
+$bg-paper-color: var(--bg-paper-color);
+$shadow-color: var(--shadow-color);
+$border-radius: var(--border-radius);
+$primary-color: var(--primary-color);
+$primary-color-darken: alpha($primary-color, -10%);
+$primary-text-color: var(--primary-text-color);
