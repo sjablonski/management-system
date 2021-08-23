@@ -5,11 +5,31 @@
   --bg-paper-color: #fff;
   --shadow-color: rgba(0, 0, 0, 0.15);
   --border-radius: 2px;
+  --border-color: rgba(0, 0, 0, 0.2);
+
   --primary-color-h: 6;
   --primary-color-s: 63%;
   --primary-color-l: 50%;
   --primary-color: hsl(var(--primary-color-h), var(--primary-color-s), var(--primary-color-l));
+
   --primary-text-color: #fff;
+  --primary-table-row-bg: transparent;
+  --secondary-table-row-bg: rgba(0, 0, 0, 0.05);
+
+  --secondary-color-h: 208;
+  --secondary-color-s: 7%;
+  --secondary-color-l: 46%;
+  --secondary-color: hsl(var(--secondary-color-h), var(--secondary-color-s), var(--secondary-color-l));
+
+  --success-color-h: 152;
+  --success-color-s: 69%;
+  --success-color-l: 31%;
+  --success-color: hsl(var(--success-color-h), var(--success-color-s), var(--success-color-l));
+
+  --info-color-h: 216;
+  --info-color-s: 90%;
+  --info-color-l: 44%;
+  --info-color: hsl(var(--info-color-h), var(--info-color-s), var(--info-color-l));
 }
 
 body.dark {
@@ -21,6 +41,20 @@ $bg-color: var(--bg-color);
 $bg-paper-color: var(--bg-paper-color);
 $shadow-color: var(--shadow-color);
 $border-radius: var(--border-radius);
+$border-color: var(--border-color);
+
 $primary-color: var(--primary-color);
 $primary-color-darken: alpha($primary-color, -10%);
+
 $primary-text-color: var(--primary-text-color);
+$primary-table-row-bg: var(--primary-table-row-bg);
+$secondary-table-row-bg: var(--secondary-table-row-bg);
+
+$secondary-color: var(--secondary-color);
+$secondary-color-darken: alpha($secondary-color, -10%);
+
+$success-color: var(--success-color);
+$success-color-darken: alpha($success-color, -10%);
+
+$info-color: var(--info-color);
+$info-color-darken: alpha($info-color, -10%);
