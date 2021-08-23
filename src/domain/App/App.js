@@ -1,7 +1,8 @@
+import EmergencyReportList from 'domain/EmergencyReportList';
 import './App.scss';
 
 function App() {
-  return <h1>Management-system</h1>;
+  return <EmergencyReportList />;
 }
 
 export default App;
