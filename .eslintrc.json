@@ -4,7 +4,7 @@
     "es2021": true,
     "jest": true
   },
-  "extends": ["plugin:react/recommended", "plugin:prettier/recommended", "airbnb"],
+  "extends": ["plugin:react/recommended", "prettier", "airbnb"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -12,7 +12,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "testing-library"],
+  "plugins": ["react", "testing-library", "prettier"],
   "settings": {
     "import/resolver": {
       "node": {
@@ -33,6 +33,9 @@
         "ImportDeclaration": "never",
         "ExportDeclaration": { "multiline": true, "minProperties": 3 }
       }
-    ]
+    ],
+    "implicit-arrow-linebreak": "off",
+    "comma-dangle": ["error", "only-multiline"],
+    "function-paren-newline": 0
   }
 }
