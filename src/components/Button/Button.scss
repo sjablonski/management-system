@@ -1,0 +1,53 @@
+.button {
+  background-color: $primary-color;
+  display: inline-flex;
+  border: 0;
+  border-radius: $border-radius;
+  padding: 10px 16px;
+  align-items: center;
+  cursor: pointer;
+  color: $primary-text-color;
+  font-size: 1.5rem;
+
+  &:hover {
+    background-color: $primary-color-darken;
+  }
+
+  &--small {
+    padding: 8px 12px;
+    font-size: 1.2rem;
+  }
+
+  &--small > .button__icon {
+    font-size: 1.8rem;
+  }
+
+  &--secondary {
+    background-color: $secondary-color;
+
+    &:hover {
+      background-color: $secondary-color-darken;
+    }
+  }
+
+  &--success {
+    background-color: $success-color;
+
+    &:hover {
+      background-color: $success-color-darken;
+    }
+  }
+
+  &--info {
+    background-color: $info-color;
+
+    &:hover {
+      background-color: $info-color-darken;
+    }
+  }
+}
+
+.button__icon {
+  margin-right: 4px;
+  font-size: 2rem;
+}
