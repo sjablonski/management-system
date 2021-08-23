@@ -1,0 +1,28 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid $border-color;
+  padding: 12px 10px;
+}
+
+.table__body tr:nth-child(even) {
+  background-color: $primary-table-row-bg;
+}
+
+.table__body tr:nth-child(odd) {
+  background-color: $secondary-table-row-bg;
+}
+
+.table__actions {
+  width: 1%;
+}
+
+.table__buttons-wrapper {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}

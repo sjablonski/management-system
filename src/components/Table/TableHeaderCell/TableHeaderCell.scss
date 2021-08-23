@@ -1,0 +1,12 @@
+.table__header-cell {
+  user-select: none;
+}
+
+.table__header-cell--clickable {
+  cursor: pointer;
+}
+
+.table__sort-icon {
+  font-size: 16px;
+  vertical-align: middle;
+}
