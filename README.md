@@ -1,3 +1,17 @@
+# Technology Stack
+
+* React
+* SASS
+
+## Libraries
+* Material Icons
+* Prop-Types
+
+## Plugins
+
+* Eslint
+* Prettier
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
