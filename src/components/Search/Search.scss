@@ -1,0 +1,19 @@
+.search {
+    display: inline-flex;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    padding: 8px;
+    cursor: text;
+}
+
+.search__icon {
+    margin-right: 2px;
+}
+
+.search__input {
+    border: 0;
+
+    &:focus-visible {
+        outline: 0;
+    }
+}
