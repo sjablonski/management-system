@@ -1,0 +1,14 @@
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page-header__title {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__icon {
+  margin-right: 2px;
+}
