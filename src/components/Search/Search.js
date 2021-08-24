@@ -19,10 +19,12 @@ function Search({ className, value, onSearch }) {
   );
 }
 
+const { string, func } = PropTypes;
+
 Search.propTypes = {
-  className: PropTypes.string,
-  value: PropTypes.string.isRequired,
-  onSearch: PropTypes.func.isRequired,
+  className: string,
+  value: string.isRequired,
+  onSearch: func.isRequired,
 };
 
 Search.defaultProps = {

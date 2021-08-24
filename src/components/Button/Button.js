@@ -13,11 +13,13 @@ function Button({ children, icon, type, className }) {
   );
 }
 
+const { node, string, oneOf } = PropTypes;
+
 Button.propTypes = {
-  children: PropTypes.node,
-  icon: PropTypes.string,
-  type: PropTypes.oneOf(['button', 'submit', 'reset']),
-  className: PropTypes.string,
+  children: node,
+  icon: string,
+  type: oneOf(['button', 'submit', 'reset']),
+  className: string,
 };
 
 Button.defaultProps = {

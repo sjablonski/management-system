@@ -17,16 +17,18 @@ function Table({ headers, onClickHeader, children }) {
   );
 }
 
+const { arrayOf, shape, string, func, node } = PropTypes;
+
 Table.propTypes = {
-  headers: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string,
-      label: PropTypes.string,
-      sort: PropTypes.string,
+  headers: arrayOf(
+    shape({
+      name: string,
+      label: string,
+      sort: string,
     })
   ).isRequired,
-  onClickHeader: PropTypes.func.isRequired,
-  children: PropTypes.node.isRequired,
+  onClickHeader: func.isRequired,
+  children: node.isRequired,
 };
 
 export default Table;

@@ -16,10 +16,12 @@ function PageHeader({ icon, title, children }) {
   );
 }
 
+const { string, node } = PropTypes;
+
 PageHeader.propTypes = {
-  icon: PropTypes.string,
-  title: PropTypes.string.isRequired,
-  children: PropTypes.node,
+  icon: string,
+  title: string.isRequired,
+  children: node,
 };
 
 PageHeader.defaultProps = {
