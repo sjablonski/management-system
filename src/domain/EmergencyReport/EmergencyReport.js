@@ -3,6 +3,10 @@ import Button from 'components/Button';
 import PageHeader from 'components/PageHeader';
 import RenderRoutes from 'routes/RenderRoutes';
 import { RoutePropTypes } from 'routes/routes';
+import Card from 'components/Card';
+import paths from 'routes/paths';
+import NavTabs from 'components/NavTabs';
+import NavTabItem from 'components/NavTabs/NavTabItem';
 import './EmergencyReport.scss';
 
 function EmergencyReport({ routes }) {
@@ -11,7 +15,13 @@ function EmergencyReport({ routes }) {
       <PageHeader icon="view_list" title="Lista zgłoszeń">
         <Button icon="add">Dodaj zgłoszenie</Button>
       </PageHeader>
-      <RenderRoutes routes={routes} />
+      <Card className="card--pt-0">
+        <NavTabs>
+          <NavTabItem icon="list" label="Lista" path={paths.emergencyReportList} />
+          <NavTabItem icon="map" label="Mapa" path={paths.emergencyReportMap} />
+        </NavTabs>
+        <RenderRoutes routes={routes} />
+      </Card>
     </main>
   );
 }

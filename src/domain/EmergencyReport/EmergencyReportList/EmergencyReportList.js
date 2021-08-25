@@ -1,13 +1,11 @@
 import { useState } from 'react';
 import Button from 'components/Button';
-import Card from 'components/Card';
-
 import Table from 'components/Table';
 import useSortableData from 'hooks/useSortableData';
 import moment from 'moment';
-import './EmergencyReportList.scss';
 import Search from 'components/Search';
 import useSearch from 'hooks/useSearch';
+import './EmergencyReportList.scss';
 
 function EmergencyReportList() {
   const tableHeaders = [
@@ -85,7 +83,7 @@ function EmergencyReportList() {
   };
 
   return (
-    <Card>
+    <>
       <div className="emergency-report__table-actions">
         <Button className="button--secondary" icon="filter_list">
           Filtruj
@@ -118,7 +116,7 @@ function EmergencyReportList() {
           </tr>
         ))}
       </Table>
-    </Card>
+    </>
   );
 }
 
