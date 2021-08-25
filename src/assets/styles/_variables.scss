@@ -11,15 +11,18 @@
   --primary-color-s: 63%;
   --primary-color-l: 50%;
   --primary-color: hsl(var(--primary-color-h), var(--primary-color-s), var(--primary-color-l));
-
   --primary-text-color: #fff;
-  --primary-table-row-bg: transparent;
-  --secondary-table-row-bg: rgba(0, 0, 0, 0.05);
 
-  --secondary-color-h: 208;
-  --secondary-color-s: 7%;
-  --secondary-color-l: 46%;
-  --secondary-color: hsl(var(--secondary-color-h), var(--secondary-color-s), var(--secondary-color-l));
+  --secondary-color-h: 0;
+  --secondary-color-s: 0%;
+  --secondary-color-l: 88%;
+  --secondary-color: hsl(
+    var(--secondary-color-h),
+    var(--secondary-color-s),
+    var(--secondary-color-l)
+  );
+  --secondary-text-color: rgba(0, 0, 0, 0.4);
+  --secondary-text-color-darken: rgba(0, 0, 0, 0.6);
 
   --success-color-h: 152;
   --success-color-s: 69%;
@@ -30,6 +33,8 @@
   --info-color-s: 90%;
   --info-color-l: 44%;
   --info-color: hsl(var(--info-color-h), var(--info-color-s), var(--info-color-l));
+
+  --disabled-color: hsla(0, 0%, 0%, 0.38);
 }
 
 body.dark {
@@ -45,16 +50,17 @@ $border-color: var(--border-color);
 
 $primary-color: var(--primary-color);
 $primary-color-darken: alpha($primary-color, -10%);
-
 $primary-text-color: var(--primary-text-color);
-$primary-table-row-bg: var(--primary-table-row-bg);
-$secondary-table-row-bg: var(--secondary-table-row-bg);
 
 $secondary-color: var(--secondary-color);
 $secondary-color-darken: alpha($secondary-color, -10%);
+$secondary-text-color: var(--secondary-text-color);
+$secondary-text-color-darken: var(--secondary-text-color-darken);
 
 $success-color: var(--success-color);
 $success-color-darken: alpha($success-color, -10%);
 
 $info-color: var(--info-color);
 $info-color-darken: alpha($info-color, -10%);
+
+$disabled-color: var(--disabled-color);

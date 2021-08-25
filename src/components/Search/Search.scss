@@ -1,19 +1,26 @@
 .search {
-    display: inline-flex;
-    border: 1px solid $border-color;
-    border-radius: $border-radius;
-    padding: 8px;
-    cursor: text;
+  display: inline-flex;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  padding: 8px;
+  cursor: text;
+  color: $secondary-text-color;
+
+  &:hover,
+  &:focus-within {
+    border-color: $secondary-text-color-darken;
+    color: $secondary-text-color-darken;
+  }
 }
 
 .search__icon {
-    margin-right: 2px;
+  margin-right: 2px;
 }
 
 .search__input {
-    border: 0;
+  border: 0;
 
-    &:focus-visible {
-        outline: 0;
-    }
+  &:focus-visible {
+    outline: 0;
+  }
 }

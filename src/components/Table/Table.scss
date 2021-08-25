@@ -1,20 +1,21 @@
 .table {
   width: 100%;
   border-collapse: collapse;
+  text-align: left;
 }
 
 .table th,
 .table td {
-  border: 1px solid $border-color;
   padding: 12px 10px;
 }
 
-.table__body tr:nth-child(even) {
-  background-color: $primary-table-row-bg;
+.table__body tr {
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
 }
 
-.table__body tr:nth-child(odd) {
-  background-color: $secondary-table-row-bg;
+.table__body tr:hover {
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .table__actions {

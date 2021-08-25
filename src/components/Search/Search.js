@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 import './Search.scss';
 
 function Search({ className, value, onSearch }) {
-  const classNames = ['search', className];
+  const classList = ['search', className].join(' ');
 
   return (
-    <label className={classNames.join(' ')} htmlFor="search">
+    <label className={classList} htmlFor="search">
       <span className="material-icons-outlined search__icon">search</span>
       <input
         id="search"
