@@ -36,6 +36,11 @@
     ],
     "implicit-arrow-linebreak": "off",
     "comma-dangle": ["error", "only-multiline"],
-    "function-paren-newline": 0
+    "function-paren-newline": 0,
+    "react/jsx-props-no-spreading": [2, {
+      "html": "enforce",
+      "custom": "ignore",
+      "explicitSpread": "enforce"
+  }]
   }
 }
