@@ -1,0 +1,26 @@
+.nav-tabs__item {
+  padding: 12px 24px;
+  color: $secondary-text-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $secondary-text-color-darken;
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+
+  &--active {
+    color: $primary-color;
+    border-bottom: 2px solid $primary-color;
+
+    &:hover {
+      color: $primary-color;
+      background-color: inherit;
+    }
+  }
+}
+
+.nav-tabs__icon {
+  vertical-align: middle;
+  margin-right: 4px;
+  font-size: 2rem;
+}
