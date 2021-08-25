@@ -2,17 +2,19 @@
 
 ## Technology Stack
 
-* React
-* SASS
+- React
+- SASS
 
 ### Libraries
-* Material Icons
-* Prop-Types
+
+- Material Icons
+- Prop-Types
+- React Router
 
 ### Plugins
 
-* Eslint
-* Prettier
+- Eslint
+- Prettier
 
 # Getting Started with Create React App
 
