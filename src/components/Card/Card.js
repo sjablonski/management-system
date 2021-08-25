@@ -1,15 +1,19 @@
 import PropTypes from 'prop-types';
 import './Card.scss';
 
-function Card({ children }) {
-  return <div className="card">{children}</div>;
+function Card({ className, children }) {
+  const classList = ['card', className].join(' ');
+
+  return <div className={classList}>{children}</div>;
 }
 
 Card.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.node,
 };
 
 Card.defaultProps = {
+  className: '',
   children: null,
 };
 
