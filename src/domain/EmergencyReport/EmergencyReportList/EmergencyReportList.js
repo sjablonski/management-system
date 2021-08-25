@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Button from 'components/Button';
 import Card from 'components/Card';
-import PageHeader from 'components/PageHeader';
+
 import Table from 'components/Table';
 import useSortableData from 'hooks/useSortableData';
 import moment from 'moment';
@@ -85,45 +85,40 @@ function EmergencyReportList() {
   };
 
   return (
-    <main>
-      <PageHeader icon="view_list" title="Lista zgłoszeń">
-        <Button icon="add">Dodaj zgłoszenie</Button>
-      </PageHeader>
-      <Card>
-        <div className="emergency-report__table-actions">
-          <Button className="button--secondary" icon="filter_list">
-            Filtruj
-          </Button>
-          <Search
-            className="emergency-report__search"
-            value={querySearch}
-            onSearch={handleQuerySearch}
-          />
-        </div>
-        <Table headers={tableHeaders} onClickHeader={handleClick}>
-          {search(querySearch, items).map((item, i) => (
-            <tr key={item.id} className="table__row">
-              <td>{i}</td>
-              <td>{item.id}</td>
-              <td>{moment(item.date).format('hh:mm, DD-MM-yyyy')}</td>
-              <td>{item.location}</td>
-              <td>{item.type}</td>
-              <td>{item.status}</td>
-              <td className="table__actions">
-                <div className="table__buttons-wrapper">
-                  <Button icon="check" className="button--small button--success">
-                    Przyjmij
-                  </Button>
-                  <Button icon="info" className="button--small button--info">
-                    Szczegóły
-                  </Button>
-                </div>
-              </td>
-            </tr>
-          ))}
-        </Table>
-      </Card>
-    </main>
+    <Card>
+      <div className="emergency-report__table-actions">
+        <Button className="button--secondary" icon="filter_list">
+          Filtruj
+        </Button>
+        <Search
+          className="emergency-report__search"
+          value={querySearch}
+          onSearch={handleQuerySearch}
+        />
+      </div>
+      <Table headers={tableHeaders} onClickHeader={handleClick}>
+        {search(querySearch, items).map((item, i) => (
+          <tr key={item.id} className="table__row">
+            <td>{i}</td>
+            <td>{item.id}</td>
+            <td>{moment(item.date).format('hh:mm, DD-MM-yyyy')}</td>
+            <td>{item.location}</td>
+            <td>{item.type}</td>
+            <td>{item.status}</td>
+            <td className="table__actions">
+              <div className="table__buttons-wrapper">
+                <Button icon="check" className="button--small button--success">
+                  Przyjmij
+                </Button>
+                <Button icon="info" className="button--small button--info">
+                  Szczegóły
+                </Button>
+              </div>
+            </td>
+          </tr>
+        ))}
+      </Table>
+    </Card>
   );
 }
 
